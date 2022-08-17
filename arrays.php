@@ -145,5 +145,22 @@ $arrayMap = array_map(function($item){
 
 
 
+$input_array = array('a', 'b', 'c', 'd', 'e', 'f', 'g');
 
+$r = array_chunk($input_array, 2);
 
+// print_r($r);
+
+//Print values of a multidimensional array from $r
+// for($i=0;$i < sizeof($r); $i++){
+//     for($j=0; $j < sizeof($r[$i]); $j++){
+//         echo $r[$i][$j];
+//     }
+// }
+
+//Array combine: Creates an array by using one array for keys and another for its values
+$a = array('green', 'red', 'yellow');
+$b = array('avocado', 'apple', 'banana');
+$c = array_combine($a, $b);
+
+dump($c);
